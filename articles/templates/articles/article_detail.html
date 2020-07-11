@@ -1,0 +1,26 @@
+{% extends 'base_layout.html' %}
+{% block optional_home_button %}
+    <li class="nav-item">
+        <form class="home-link" action="{% url 'home' %}" method="POST">
+            {% csrf_token %}
+            <button type="submit" class="home_button">HOME</button>             
+        </form>
+    </li>
+    &nbsp;&nbsp;
+{% endblock %}
+
+{% block content %}
+    <!--<h3><a href="{% url 'articles:create' %}" class="new_article_button">Create new article</a></h3>-->
+
+    <div class="article_detail page_down">
+        <div class="article">
+            <br><br><br>
+            <img src="{{ article.thumb.url }}" id="image_article">
+            <br><br>
+            <h2 id="article_title">{{ article.title }}</h2>
+            <br><br>
+            <p id="article_body">{{ article.body }}</p>
+            <p id="article_date">Posted by <b>{{article.author}}</b> on {{ article.date }}</p>
+        </div>
+    </div>
+{% endblock %}
