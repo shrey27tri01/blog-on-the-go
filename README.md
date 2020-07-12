@@ -11,7 +11,8 @@ To run the website locally, type the following on the command line:
 - pip install -r requirements.txt
 - python -m pip install django
 - django-admin --version (check the installation of django)
-- python manage.py runserver
+- python manage.py runserver    
+
 Then visit localhost on port 8000(127.0.0.1:8000/ or localhost:8000/)
 
-Or you can visit the deployed website <a href="https://shrey27tri01.pythonanywhere.com/">here</a>.  
+Or alternatively, you can visit the deployed website <a href="https://shrey27tri01.pythonanywhere.com/">here</a>.  
