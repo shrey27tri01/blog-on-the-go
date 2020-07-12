@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'p$kaeex3zoqs^ven75$jal2j=(xg@e!=88e34m@0a@$grlif89'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['blogonthego.herokuapp.com', '127.0.0.1']
 
