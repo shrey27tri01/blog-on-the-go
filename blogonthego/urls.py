@@ -31,7 +31,7 @@ urlpatterns = [
     path('articles/', include('articles.urls')),
     path('about/', views.about),
     path('', article_views.article_list, name='home'),
-    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('images/favicon.ico')))
+    path('favicon.ico', RedirectView.as_view(url=staticfiles_storage.url('favicon.ico')))
 ]
 
 urlpatterns += staticfiles_urlpatterns()
