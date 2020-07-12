@@ -11,6 +11,7 @@ To run the website locally, type the following on the command line:
 - pip install -r requirements.txt
 - python -m pip install django
 - django-admin --version (check the installation of django)
+- set SECRET_KEY = 'mysecret' (```export``` instead of ```set``` for macos) 
 - python manage.py runserver    
 
 Then visit localhost on port 8000(127.0.0.1:8000/ or localhost:8000/)
