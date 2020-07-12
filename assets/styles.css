@@ -295,7 +295,8 @@ body {
 .site-form input, .site-form textarea{
     display: block;
     margin: 20px auto;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .site-form input[type="submit"]{
@@ -438,4 +439,10 @@ body {
     margin-left: 5vw;
     font-size: 25px;
     color: lightblue;
+}
+
+#id_password1, #id_password2, #id_username, #id_password, #id_slug{
+    max-width: 150px;
+    margin-right: auto;
+    margin-left: auto;
 }

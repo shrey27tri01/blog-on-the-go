@@ -1,4 +1,9 @@
 {% extends 'base_layout.html' %}
+
+{% block title %}
+Article
+{% endblock %}
+
 {% block optional_home_button %}
     <li class="nav-item">
         <form class="home-link" action="{% url 'home' %}" method="POST">
